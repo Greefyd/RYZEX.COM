@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mój sklep z ubraniami</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #2893b0ea;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      color: rgb(255, 255, 255);
+    }
+
+    .produkt {
+      border: 2px solid white;
+      margin: 20px;
+      padding: 20px;
+      display: inline-block;
+      width: 200px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    button {
+      background-color: rgb(255, 255, 255);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>👕 Mój sklep</h1>
+
+  <div class="produkt">
+    <img src="https://via.placeholder.com/200">
+    <h2>Męski Biały T-shirt</h2>
+    <p>50 zł</p>
+    <button>Kup teraz</button>
+  </div>
+
+  <div class="produkt">
+    <img src="https://via.placeholder.com/200">
+    <h2>Męska Bluza z Kapturem Czarna</h2>
+    <p>75 zł</p>
+    <button>Kup teraz</button>
+  </div>
+
+</body>
+</html>
+<div class="produkt">
+    <img src="https://via.placeholder.com/200">
+    <h2>Damska Bluza z Kapturem Czarna</h2>
+    <p>75 zł</p>
+    <button>Kup teraz</button>
+  </div>
+   <div class="produkt">
+    <img src="https://via.placeholder.com/200">
+    <h2>Damski Biały T-shirt</h2>
+    <p>50 zł</p>
+    <button>Kup teraz</button>
+  </div>
+  <!DOCTYPE html>
+<html>
