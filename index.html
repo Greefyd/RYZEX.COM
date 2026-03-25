@@ -1,73 +1,130 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mój sklep z ubraniami</title>
-
+  <title>RYZEX.COM</title>
   <style>
     body {
-      font-family: Arial;
-      background-color: #2893b0ea;
+      font-family: Arial, sans-serif;
+      background-color: #0f0f0f;
       color: white;
       text-align: center;
+      margin: 0;
+      padding: 0;
     }
 
-    h1 {
-      color: rgb(255, 255, 255);
+    header {
+      background-color: lime;
+      color: black;
+      padding: 20px 0;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    p.slogan {
+      color: #ccc;
+      font-size: 18px;
+      margin: 10px 0 20px 0;
+    }
+
+    .produkty {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 0 20px 40px 20px;
     }
 
     .produkt {
-      border: 2px solid white;
-      margin: 20px;
-      padding: 20px;
-      display: inline-block;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 15px;
       width: 200px;
     }
 
-    img {
+    .produkt img {
       width: 100%;
+      border-radius: 10px;
     }
 
-    button {
-      background-color: rgb(255, 255, 255);
+    .produkt h2 {
+      font-size: 20px;
+      margin: 10px 0 5px 0;
+    }
+
+    .produkt p {
+      margin: 5px 0 10px 0;
+      font-size: 16px;
+    }
+
+    .produkt button {
+      background-color: lime;
       border: none;
       padding: 10px;
       cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .produkt button:hover {
+      background-color: green;
+    }
+
+    footer {
+      background-color: #111;
+      color: #777;
+      padding: 15px 0;
+      font-size: 14px;
     }
 
   </style>
+
+  <script>
+    function kup(nazwa) {
+      alert("Dzięki za zakup: " + nazwa + " 🛒");
+    }
+  </script>
+
 </head>
 
 <body>
 
-  <h1>👕 Mój sklep</h1>
+  <header>RYZEX.COM</header>
+  <p class="slogan">Najlepszy streetwear w sieci 🔥</p>
 
-  <div class="produkt">
-    <img src="https://via.placeholder.com/200">
-    <h2>Męski Biały T-shirt</h2>
-    <p>50 zł</p>
-    <button>Kup teraz</button>
+  <div class="produkty">
+    <div class="produkt">
+      <img src="https://via.placeholder.com/200x200?text=Hoodie+Black">
+      <h2>Hoodie Black</h2>
+      <p>120 zł</p>
+      <button onclick="kup('Hoodie Black')">Kup teraz</button>
+    </div>
+
+    <div class="produkt">
+      <img src="https://via.placeholder.com/200x200?text=T-shirt+White">
+      <h2>T-shirt White</h2>
+      <p>60 zł</p>
+      <button onclick="kup('T-shirt White')">Kup teraz</button>
+    </div>
+
+    <div class="produkt">
+      <img src="https://via.placeholder.com/200x200?text=Cap+Red">
+      <h2>Cap Red</h2>
+      <p>50 zł</p>
+      <button onclick="kup('Cap Red')">Kup teraz</button>
+    </div>
+
+    <div class="produkt">
+      <img src="https://via.placeholder.com/200x200?text=Sneakers+Black">
+      <h2>Sneakers Black</h2>
+      <p>200 zł</p>
+      <button onclick="kup('Sneakers Black')">Kup teraz</button>
+    </div>
   </div>
 
-  <div class="produkt">
-    <img src="https://via.placeholder.com/200">
-    <h2>Męska Bluza z Kapturem Czarna</h2>
-    <p>75 zł</p>
-    <button>Kup teraz</button>
-  </div>
+  <footer>© 2026 RYZEX.COM – Wszystkie prawa zastrzeżone</footer>
 
 </body>
 </html>
-<div class="produkt">
-    <img src="https://via.placeholder.com/200">
-    <h2>Damska Bluza z Kapturem Czarna</h2>
-    <p>75 zł</p>
-    <button>Kup teraz</button>
-  </div>
-   <div class="produkt">
-    <img src="https://via.placeholder.com/200">
-    <h2>Damski Biały T-shirt</h2>
-    <p>50 zł</p>
-    <button>Kup teraz</button>
-  </div>
-  <!DOCTYPE html>
-<html>
